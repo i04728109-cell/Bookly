@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Bookly AI — единая система онлайн-записи для ресторанов, салонов и барбершопов Узбекистана. Страница бронирования и Telegram Mini App для каждого заведения.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bookly AI — онлайн-запись для заведений Узбекистана">
+<meta property="og:description" content="Bookly AI — единая система онлайн-записи для ресторанов, салонов и барбершопов Узбекистана. Страница бронирования и Telegram Mini App для каждого заведения.">
+<meta name="theme-color" content="#0a0b14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📅%3C/text%3E%3C/svg%3E">
+<title>Bookly AI — онлайн-запись для заведений Узбекистана</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body><div class="aur" aria-hidden="true"><i style="width:520px;height:520px;left:-120px;top:-80px;background:#4a5be0"></i><i style="width:460px;height:460px;right:-100px;top:15%;background:#3b4a9e;animation-delay:-6s"></i><i style="width:500px;height:500px;left:30%;bottom:-160px;background:#5b6bf5;animation-delay:-12s"></i></div>
+<nav><div class="w">
+<a class="logo" href="#home"><i>B</i>Bookly AI</a>
+<a class="l" href="#features">Возможности</a><a class="l" href="#restaurants">Рестораны</a><a class="l" href="#salons">Салоны</a><a class="l" href="#pricing">Тарифы</a><a class="l" href="#contacts">Контакты</a><a class="l mcta" href="#cta">Подключить заведение</a>
+<select class="lgs" id="lg" aria-label="Language"><option value="ru">RU</option><option value="uz">UZ</option><option value="en">EN</option></select><button class="th bgr" id="bgr" aria-label="Меню" aria-expanded="false">☰</button><button class="th" id="th" aria-label="Сменить тему">◐</button>
+<a class="btn" href="#cta">Подключить</a>
+</div></nav>
+
+<main id="p-home" class="pg"><header class="hero" id="top"><div class="w hg">
+<div>
+<h1 class="title-in">Запись клиентов, которая работает без звонков</h1>
+<p class="lead mut title-in" style="animation-delay:.12s">Bookly AI — единая система онлайн-записи для ресторанов, салонов и барбершопов Узбекистана. Страница бронирования и Telegram Mini App для каждого заведения.</p>
+<div class="row title-in" style="animation-delay:.24s"><a class="btn" href="#cta">Подключить заведение</a><a class="btn g" href="#how">Как это работает</a></div>
+<div class="proof title-in" style="animation-delay:.36s"><div><b>0 звонков</b><span>для записи клиента</span></div><div><b>24/7</b><span>приём бронирований</span></div><div><b>UZS</b><span>цены в сумах</span></div></div>
+</div>
+<div class="demo" id="demo" aria-label="Интерактивная демонстрация бронирования"><span class="bd" style="right:-26px;top:36px">✨ Новая бронь</span><span class="bd" style="left:-34px;bottom:90px;animation-delay:-2s">✓ Telegram</span><span class="bd" style="right:-14px;bottom:28px;animation-delay:-3.5s">UZS</span>
+<div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-t="salon">Салон</button><button role="tab" aria-selected="false" data-t="rest">Ресторан</button></div>
+<div id="dbody"></div>
+<div class="ok" id="ok"><div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><h3>Запись подтверждена</h3><p class="mut" id="okt"></p><div class="tg" id="tgm"></div><button class="btn g" id="again">Попробовать снова</button></div>
+</div>
+</div></header>
+
+<div class="mq" aria-hidden="true"><div class="mt" id="mt"></div></div>
+<section id="how"><div class="w">
+<div class="head"><h2>От ссылки до записи за три шага</h2><p class="mut">Клиент не скачивает приложение и не регистрируется. Он выбирает время и получает подтверждение в Telegram.</p></div>
+<div class="steps">
+<div class="step"><span>Шаг 1</span><h3>Клиент открывает ссылку</h3><p class="mut">Страница bookly.ai/b/название или Mini App в Telegram с логотипом и цветами вашего заведения.</p></div>
+<div class="step"><span>Шаг 2</span><h3>Выбирает услугу или столик</h3><p class="mut">Система показывает только свободное время с учётом мастеров, длительности и вместимости столиков.</p></div>
+<div class="step"><span>Шаг 3</span><h3>Вы получаете бронь</h3><p class="mut">Запись появляется в кабинете, а владелец и клиент получают уведомление. Двойная запись исключена на уровне базы данных.</p></div>
+</div></div></section>
+
+<section id="biz" style="padding-top:24px"><div class="w">
+<div class="head"><h2>Устроено под ваш тип бизнеса</h2><p class="mut">У ресторана и салона разные правила, поэтому у них разные сценарии записи.</p></div>
+<div class="feat"><div class="g2">
+<div class="ft" role="tablist"><button role="tab" aria-selected="true" data-f="0">Рестораны и кафе</button><button role="tab" aria-selected="false" data-f="1">Салоны и барбершопы</button></div>
+<div class="fp" id="fp"></div>
+</div></div></div></section>
+
+<section id="tg" style="padding-top:24px"><div class="w tgw">
+<div><h2>Свой Telegram Mini App у каждого заведения</h2><p class="mut">Клиенты Узбекистана уже живут в Telegram. Дайте им запись в два касания там, где они общаются.</p>
+<ul class="lst"><li><b>Один бот для всех заведений</b><span class="mut">Каждое заведение открывается по своей ссылке со своим брендингом.</span></li><li><b>Проверенные данные пользователя</b><span class="mut">Подлинность Telegram-данных проверяется на сервере.</span></li><li><b>Напоминания и уведомления</b><span class="mut">О новой записи, переносе и отмене.</span></li></ul></div>
+<div class="phone" aria-hidden="true"><div class="bar"></div><b>Barber House</b><p class="mut" style="font-size:13px">Ташкент · 09:00–21:00</p>
+<div class="it"><span>Стрижка</span><b>120 000</b></div><div class="it"><span>Борода</span><b>70 000</b></div><div class="it"><span>Комплекс</span><b>170 000</b></div><div class="b2">Записаться</div></div>
+</div></section>
+
+</main><main id="p-pricing" class="pg" hidden><section id="price" style="padding-top:24px"><div class="w">
+<div class="head"><h2>Тарифы</h2><p class="mut">Фиксированная цена в сумах: Старт — около $40, Бизнес — около $80 в месяц. Цена покрывает сервер, базу данных и Telegram-бота. Суммы ориентировочные.</p></div>
+<div class="sw"><button aria-pressed="true" data-p="m">Помесячно</button><button aria-pressed="false" data-p="y">Год, −20%</button></div>
+<div class="price">
+<div class="pc"><h3>Старт</h3><div class="pr" data-b="490000">490 000 <small>сум/мес</small></div><ul><li>1 заведение</li><li>До 3 сотрудников</li><li>Страница бронирования</li><li>Уведомления в Telegram</li></ul><a class="btn g" href="#cta">Выбрать</a></div>
+<div class="pc hot"><h3>Бизнес</h3><div class="pr" data-b="990000">990 000 <small>сум/мес</small></div><ul><li>До 15 сотрудников и столиков</li><li>Telegram Mini App</li><li>Аналитика</li><li>Напоминания клиентам</li></ul><a class="btn" href="#cta">Выбрать</a></div>
+<div class="pc"><h3>Сеть</h3><div class="pr" style="font-size:26px">По запросу</div><ul><li>Несколько филиалов</li><li>Расширенные роли</li><li>Индивидуальные условия</li></ul><a class="btn g" href="#cta">Обсудить</a></div>
+</div></div></section>
+
+<section id="faq" style="padding-top:24px"><div class="w" style="max-width:800px">
+<h2 style="margin-bottom:24px">Частые вопросы</h2>
+<details><summary>Нужно ли клиентам устанавливать приложение?</summary><p>Нет. Запись работает по ссылке в браузере или внутри Telegram.</p></details>
+<details><summary>Как защищены данные заведения?</summary><p>Каждое заведение изолировано от других на уровне базы данных. Сотрудник одного бизнеса не видит данные другого.</p></details>
+<details><summary>Можно ли избежать двойных записей?</summary><p>Да. Свободное время проверяется на сервере, а база данных не позволяет занять один слот дважды.</p></details>
+<details><summary>Есть ли онлайн-оплата?</summary><p>Пока нет. Интеграции с Click и Payme планируются отдельным этапом.</p></details>
+<details><summary>На каких языках работает сервис?</summary><p>Русский, узбекский и английский. Язык переключается в меню.</p></details>
+</div></section>
+
+</main><section id="cta" style="padding-top:24px"><div class="w"><div class="cta"><h2>Подключите заведение к Bookly AI</h2><p>Напишите нам в Telegram — настроим страницу бронирования и покажем кабинет на ваших данных.</p><a class="btn" href="https://t.me/" target="_blank" rel="noopener noreferrer">Написать в Telegram</a></div></div></section>
+
+<footer><div class="w"><span>© 2026 Bookly AI. Ташкент, Узбекистан</span><span><a href="#features">Возможности</a><a href="#restaurants">Рестораны</a><a href="#salons">Салоны</a><a href="#pricing">Тарифы</a><a href="#contacts">Контакты</a></span></div></footer>
+
+<script src="/i18n.js" defer></script>
+<script src="/app.js" defer></script>
+</body>
+</html>
